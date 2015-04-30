@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />			<!-- Meta Data -->
+
+      <title>Fairfax Media | Adam Lawrence</title>
+      
+      <link rel="shortcut icon" href="img/logo.png"> 								
+      <link rel="stylesheet" href="lib/prod/screen.css?v1.1" />
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,500italic|Open+Sans:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
+  	  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?v1.1"></script>
+
+      <script type="text/javascript" src="lib/prod/project.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <header class="prm box-shadow ease_sd">
+        <img id="header_logo" class="fl_lt" src="assets/svg/logo.svg?v1.1" alt="" />
+        <span id="headerMessage">Adam Lawrence</span>
+        <div class="clearfix"></div>
+    </header>     													<!-- Header -->
+
+    <main>
+        <section class="border_box">
+            <form class="_66_m bg-fff p_l m_l_top">
+
+              <div class="clearfix p_l p_l_left p_l_right">  
+                  <h1>Form Validation</h1>
+                  <h2>Detect User Input</h2>
+                  <div class="clearfix underline-solid m_l_bottom m_l_top"></div>
+              </div>    
+              
+                
+              <div id="errorBlock" class="block_red txt_sm p_m m_l_top p_l_left p_l_right" style="display:none;">
+                    <p class="txt_sm"><b>NO MATCH - </b> We are unable to find a match for your query please check and re-submit.</p>
+              </div>
+              
+              <div class="clearfix _50_m p_l_left p_l_right">                                          
+                <label class="p_l_top p_m_bottom clearfix"><span class="txt_sm">Given Name</span> <span style="color:#F00">*</span></label>
+                <span class="input_area m_m_top clearfix round-sd">
+                    <input type="text" id="given" class="required" data-type="text" data-target="card-given" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right">                                          
+                <label class="p_l_top p_m_bottom clearfix"><span class="txt_sm">Surname</span> <span style="color:#F00">*</span></label>
+                <span class="input_area m_l_top_break error clearfix round-sd">
+                       <input type="text" id="surname" class="required" data-type="text" data-target="card-surname" />
+                       <span class="input-icon"></span>
+                </span> 
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div id="errorMessage" class="p_l_top clearfix  p_l_left p_l_right" style="display:none">
+                  <p class="txt_xs"><b>ERROR - </b>There are errors with your form, please check inputs before proceeding.</p>
+              </div>
+
+              <div class="clearfix align_ct p_l">
+                <button id="submit" class="button_lt _50_m m_l_top round-sd" style="float:none">SUBMIT</button>
+              </div>
+
+            </form> 
+
+            <div class="clearfix"></div>
+
+            <div id="card" class="round-sd m_l_top">
+              <div class="block-prm p_l_left p_l_right">
+                  <h3>Full Name</h3>
+              </div> 
+              <div class="bg-fff p_l">
+                  <p><label style="width:12em"><b>Name: </b> </label><span id="card-given" class="m_l_left"></span><span id="card-surname" class="m_l_left c"></span></p>
+              </div>  
+            </div>
+
+
+        </section>
+    </main>
+    
+    <div class="clearfix"></div>
+    <div class="clearfix" style="height:10em"></div>
+
+    <span id="screenSizeTesting">
+        <div id="testing_phone">
+        </div>
+        <div id="testing_tablet">
+        </div>
+        <div id="testing_desktop">
+        </div>
+        <div id="testing_desktop_lg">
+        </div>
+    </span>  
+
+<script>
+
+$(function(){
+
+var validationInit = new ValidateForm($('form'));
+var postToCard = new CreateForm($('form'), $('#card'), $('#submit'));  
+
+});
+
+</script>
+
+
+</body>
+</html>

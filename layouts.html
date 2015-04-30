@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Layout Manager | Index Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,500italic|Open+Sans:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="lib/prod/screen.css?v1.1" />
+    <!-- <script type="text/javascript" src="lib/prod/project.min.js"></script> -->
+    <script type="text/javascript" src="lib/src/js/vert-center.js"></script>
+    <script type="text/javascript" src="lib/src/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="lib/src/js/element-builder.js"></script>
+    <script type="text/javascript" src="lib/src/js/redirect-manager.js"></script>
+    <script type="text/javascript" src="lib/src/js/event-manager.js"></script>
+    <script type="text/javascript" src="lib/src/js/layoutManager-init.js"></script>
+    
+</head>
+
+<body>
+
+    <header class="prm box-shadow ease_sd">
+        <img id="header_logo" class="fl_lt" src="assets/svg/logo.svg?v1.1" alt="" />
+        <span id="headerMessage">Welcome</span>
+        <div class="clearfix"></div>
+    </header>                            
+
+	<main>
+        <section>
+            <div class="p_m_right p_m_left">
+                <h1 class="m_l_top">Layout Manager</h1>
+                <h2 class="m_m_top">Layouts \<span class="level2"></span></h2>
+
+                <div class="clearfix"></div>
+
+                <ul class="inline tabs p_l_top txt_sm clearfix">
+                    <li id="tab-order">
+                        <a href="#">
+                            Sort Order 
+                            <span class="icon-arrow-down m_l_left"></span>
+                        </a>
+                        <ul id="sort-date" class="sub">
+                            <li>
+                                <a href="lastEdited" class="selected">
+                                    Most Recent<span class="icon-checkmark2 fl_rt txt_sec_m"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="rank">
+                                    Highest Rank<span class="icon-checkmark2 fl_rt txt_sec_m"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="oldestToLatest">
+                                    Oldest to Newest<span class="icon-checkmark2 fl_rt txt_sec_m"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab-catergory">
+                        <a href="#">
+                            Catergory
+                            <span class="icon-arrow-down m_l_left"></span>
+                        </a>
+                        <ul class="sub">
+                            <li>
+                                <a id="allCatergories" href="#" class="selected">All<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">School<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">Sports<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">Family<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">Client<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="#">Other<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">Offline<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            -->
+                        </ul>
+                    </li>
+                    <li id="tab-products">
+                        <a href="#">
+                            Products
+                            <span class="icon-arrow-down m_l_left"></span>
+                        </a>
+                        <ul id="productList" class="sub" style="width:300%">
+                            <li>
+                                <a id="allProducts" href="#" class="selected">All<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab-editedBy">
+                        <a href="#">
+                            Edited By
+                            <span class="icon-arrow-down m_l_left"></span>
+                        </a>
+                        <ul class="sub">
+                            <li>
+                                <a href="#" class="selected">All<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-event">Adam<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-event">Arlen<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-event">Michelle<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-event">William<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-event">Zac<span class="icon-checkmark2 fl_rt txt_sec_m"></span></a>
+                            </li>
+                        </ul>   
+                    </li>
+                </ul>
+
+                <span class="input_area m_l_top fl_rt txt_sm" style="width:15em">
+                    <input id="keywords" type="text" class="bg-fff" placeholder="Keyword Search" style="background:#fff" />
+                </span>
+
+                <div class="clearfix"></div>
+
+                <div class="underline-solid m_l_top"></div>
+            </div>    
+
+            <div class="relative">
+                <div class="load-item"></div> 
+                <div id="error-message" class="block-red hidden m_l_top p_l_left p_l_right">
+                    <p><b>Error: </b>Sorry a match could not be found, please try another search</p>
+                </div> 
+                <ul id="layoutList" class="relative m_l_top listGrid">
+                </ul>                
+            </div>    
+
+            <ul id="templates" class="hidden">
+                <li id="layoutListTemplate" class="list-grid-25">
+                    <div class="wrp round-sd">    
+                        <img class="_100" src="" alt="" />
+                        <div class="bg-fff _100 p_m_left p_m_right p_l_bottom p_m_top p_m_top align_rt clearfix">
+                            <p class="productName txt_xs"></p>
+                            <a class="edit auto _33_s" data-type="edit"><span class="txt_xs">EDIT</span> <span class="icon-eye"></span></a>
+                            <a class="copy auto _33_s" data-type="copy"><span class="txt_xs">COPY</span> <span class="icon-copy"></span></a>
+                            <a class="linkTo auto _33_s" data-type="link"><span class="txt_xs">LINK</span> <span class="icon-cog"></span></a>
+                        </div>
+                    </div>
+                    <p class="txt_xs"><b>EDITED BY: </b> <span class="lastEdited"></span></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+	<footer></footer>
+
+    <span id="screenSizeTesting">
+        <div id="testing_phone">
+        </div>
+        <div id="testing_tablet">
+        </div>
+        <div id="testing_desktop">
+        </div>
+        <div id="testing_desktop_lg">
+        </div>
+	</span>
+
+</body>	
