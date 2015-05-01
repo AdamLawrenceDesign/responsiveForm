@@ -5,17 +5,21 @@ h1
 {
 	font-family:"Open Sans", sans-serif;
 	margin-top:.2em;
+	margin-bottom: .5em;
 	line-height: 1.4;
 	font-weight:500;
+	color:$prm_d;
 }
 	
 h2 
 {
 	font-family:"Open Sans", sans-serif;
 	font-weight:500; 
-	line-height: 1.7em;
+	line-height: .9em;
+	text-transform: uppercase;
 	color:$ntl_l;
-	margin: 0 0 .2em 0;
+	margin-top:1em;
+	margin-bottom:.5em;
 }
 
 h3 
@@ -68,7 +72,7 @@ blockquote p
 .txt_prm_l {color:$prm_l !important}		/* ==== text colours ==== */
 .txt_prm_m {color:$prm_m !important}
 .txt_prm_d {color:$prm_d !important}
-.txt_red {color:red !important}
+.txt_red {color:#F00 !important}
 .txt_sec_m {color:$sec_m !important}
 .txt_ntl_m {color:$ntl_m !important}
 .txt_fff {color:#fff !important}
@@ -86,4 +90,42 @@ blockquote p
 .txt-emboss-drk 
 {
     text-shadow:$ntl_m 1px 1px 0;
+}
+
+
+/* Break Points & Column Resizing */
+@media only screen and (min-width : 20em) {						/* ===== 20em (320px) Red ====== */
+	h1 { font-size:1.4em }
+	h2 { font-size: .9em}
+	h3 { font-size: 1.18em }
+	h4 { font-size: 1.08em }
+	blockquote p {font-size:.8em;}
+}
+
+@media only screen and (min-width : 48em) {						/* ======= 48em (768px) Green ======= */
+
+	h1 {
+		font-size:2.2em;
+		margin-top:.2em;
+		line-height: 1.4 }
+	
+	h3 {
+		font-size: 1.38em;
+		line-height: 1.7em;
+		margin: .4em 0 .2em 0 }
+	
+	h4 {
+		font-size: 1.18em;
+		line-height: 1.2em;
+		margin:.5em 0 }
+	blockquote p {font-size:.9em;}
+
+}
+
+@media only screen and (min-width : 56.25em) {					/* ====== 56.25em (900px) dark blue ======= */
+						
+}
+
+@media only screen and (min-width : 68.75em) {					/* ======== 68.75em (1100px) light blue ======== */
+	
 }

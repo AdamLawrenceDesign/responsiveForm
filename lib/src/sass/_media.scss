@@ -88,12 +88,6 @@ section {																		/* ========= wrapper ========= */
 	.phone_view {display:block}
 	.phone_max {width:100%;margin-top:.5em}
 	.desktop_view, .tablet_view { display:none}
-	
-	h1 { font-size:1.4em }
-	h2 { font-size: 1.2em}
-	h3 { font-size: 1.18em }
-	h4 { font-size: 1.08em }
-	blockquote p {font-size:.8em;}
 
 	section, ._10_m, ._10_l, ._20_m, ._20_l, ._25_m, ._30_m, ._25_l, ._30_l, ._33_m, ._33_l, ._40_m,._40_l, ._50_m, ._50_l,._60_m, ._60_l,._66_m,._66_l,._70_m, ._70_l, ._75_m, ._75_l, ._80_m, ._80_l, ._90_m, ._90_l {
 		width:100%	}
@@ -155,27 +149,6 @@ section {																		/* ========= wrapper ========= */
 	{
 
 	}
-
-	h1 {
-		font-size:2.2em;
-		margin-top:.2em;
-		line-height: 1.4 }
-		
-	h2 {
-		font-size: 1.68em;
-		line-height: 1.7em;
-		margin: 0 0 .2em 0 }
-	
-	h3 {
-		font-size: 1.38em;
-		line-height: 1.7em;
-		margin: .4em 0 .2em 0 }
-	
-	h4 {
-		font-size: 1.18em;
-		line-height: 1.2em;
-		margin:.5em 0 }
-	blockquote p {font-size:.9em;}
 
 		#image_list {
 			padding:1em }

@@ -1,0 +1,58 @@
+#layoutList
+{
+	li 
+	{
+		padding-left:.5em;
+		padding-right:.5em;
+	}
+}
+
+ul.listGrid
+{
+	li .wrp
+	{
+		border:1px solid #ddd;
+		cursor: pointer;
+		@extend .ease-sd
+	}
+	li .wrp:hover
+	{
+		-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.25);	
+	}
+}
+
+@media only screen and (min-width : 20em) {																	/* ===== 20em (320px) Red ====== #testing_phone {display:block}*/
+	.list-grid-25
+	{
+		width:50%;
+	}
+	.list-grid-33
+	{
+		width:50%;
+	}
+}
+
+@media only screen and (min-width : 48em){																/* ======= 48em (768px) Green ======= 	#testing_phone {display:none}#testing_tablet {display:block} */
+	.list-grid-25
+	{
+		width:33.3333%;
+	}
+	.list-grid-33
+	{
+		width:33.3333%;
+	}
+}
+
+@media only screen and (min-width : 56.25em) {																/* ====== 56.25em (900px) dark blue ======= #testing_tablet {display:none}#testing_desktop {display:block}*/
+	.list-grid-25
+	{
+		width:25%;
+	}
+}
+
+@media only screen and (min-width : 68.75em){															/* ======== 68.75em (1100px) light blue ======== #testing_desktop {display:none}#testing_desktop_lg {display:block } */	
+																
+}
+

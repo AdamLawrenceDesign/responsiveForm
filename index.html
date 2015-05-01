@@ -7,99 +7,179 @@
 
       <title>Fairfax Media | Adam Lawrence</title>
       
-      <link rel="shortcut icon" href="img/logo.png"> 								
+      <link rel="shortcut icon" href="assets/img/logo.png"> 								
       <link rel="stylesheet" href="lib/prod/screen.css?v1.1" />
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,500italic|Open+Sans:400,300,700,600,300italic' rel='stylesheet' type='text/css'>
   	  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?v1.1"></script>
-
       <script type="text/javascript" src="lib/prod/project.min.js"></script>
     
 </head>
 
 <body>
     
-    <header class="prm box-shadow ease_sd">
+    <header class="prm box-shadow clearfix">
         <img id="header_logo" class="fl_lt" src="assets/svg/logo.svg?v1.1" alt="" />
         <span id="headerMessage">Adam Lawrence</span>
-        <div class="clearfix"></div>
-    </header>     													<!-- Header -->
+    </header>     
 
-    <main>
-        <section class="border_box">
-            <form class="_66_m bg-fff p_l m_l_top">
+    <section class="border_box">
+        <main class="_66_m">          
+            <form class="bg-fff p_l m_l_top">
 
-              <div class="clearfix p_l p_l_left p_l_right">  
-                  <h1>Form Validation</h1>
-                  <h2>Detect User Input</h2>
-                  <div class="clearfix underline-solid m_l_bottom m_l_top"></div>
+              <div class="clearfix p_l">  
+                  <h1>HCard Builder</h1>
+                  <h2>Personal Details</h2>
+                  <div class="clearfix underline-solid"></div>
               </div>    
               
-                
-              <div id="errorBlock" class="block_red txt_sm p_m m_l_top p_l_left p_l_right" style="display:none;">
-                    <p class="txt_sm"><b>NO MATCH - </b> We are unable to find a match for your query please check and re-submit.</p>
-              </div>
-              
-              <div class="clearfix _50_m p_l_left p_l_right">                                          
-                <label class="p_l_top p_m_bottom clearfix"><span class="txt_sm">Given Name</span> <span style="color:#F00">*</span></label>
-                <span class="input_area m_m_top clearfix round-sd">
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Given Name</label>
+                <span class="input_area m_s_top clearfix round-sd">
                     <input type="text" id="given" class="required" data-type="text" data-target="card-given" />
                     <span class="input-icon"></span>
                 </span>
               </div>
 
-              <div class="clearfix _50_m p_l_left p_l_right">                                          
-                <label class="p_l_top p_m_bottom clearfix"><span class="txt_sm">Surname</span> <span style="color:#F00">*</span></label>
-                <span class="input_area m_l_top_break error clearfix round-sd">
-                       <input type="text" id="surname" class="required" data-type="text" data-target="card-surname" />
-                       <span class="input-icon"></span>
-                </span> 
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Surname</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="surname" class="required" data-type="text" data-target="card-surname" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Email</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="email" class="required" data-type="email" data-target="card-email" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Phone</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="phone" class="required" data-type="phone" data-target="card-phone" />
+                    <span class="input-icon"></span>
+                </span>
               </div>
 
               <div class="clearfix"></div>
 
-              <div id="errorMessage" class="p_l_top clearfix  p_l_left p_l_right" style="display:none">
-                  <p class="txt_xs"><b>ERROR - </b>There are errors with your form, please check inputs before proceeding.</p>
+              <div class="clearfix p_l ">  
+                  <h2>Address</h2>
+                  <div class="clearfix underline-solid"></div>
+              </div>    
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">House Name or #</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="house" class="required" data-type="text" data-target="card-house" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Street</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="street" class="required" data-type="text" data-target="card-street" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Suburb</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="suburb" class="required" data-type="text" data-target="card-suburb" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">State</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="state" class="required" data-type="text" data-target="card-state" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Postcode </label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="postcode" class="required" data-type="text" data-target="card-postcode" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix _50_m p_l_left p_l_right m_l_top">                                          
+                <label class="txt_sm clearfix">Country</label>
+                <span class="input_area m_s_top clearfix round-sd">
+                    <input type="text" id="country" class="required" data-type="text" data-target="card-country" />
+                    <span class="input-icon"></span>
+                </span>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div id="errorMessage" class="p_l_top clearfix m_l_top p_l_left p_l_right" style="display:none">
+                  <p class="txt_xs"><b class="txt-red">ERROR - </b>There are errors with your form, please check inputs before proceeding.</p>
               </div>
 
               <div class="clearfix align_ct p_l">
-                <button id="submit" class="button_lt _50_m m_l_top round-sd" style="float:none">SUBMIT</button>
+                <button id="submit" class="button_lt _50_m m_l_top round-sd" style="float:none">Create HCard</button>
               </div>
-
             </form> 
 
             <div class="clearfix"></div>
 
+            <h2 id="scrollTo" class="m_l_top">HR Card Preview</h2>
+
             <div id="card" class="round-sd m_l_top">
-              <div class="block-prm p_l_left p_l_right">
-                  <h3>Full Name</h3>
-              </div> 
-              <div class="bg-fff p_l">
-                  <p><label style="width:12em"><b>Name: </b> </label><span id="card-given" class="m_l_left"></span><span id="card-surname" class="m_l_left c"></span></p>
-              </div>  
+                <div class="block-prm p_l_left p_l_right">
+                    <h3>
+                      <span id="card-given"></span>&nbsp;
+                      <span id="card-surname"></span>
+                    </h3>
+                </div> 
+                <div class="bg-fff p_l">
+                    <div class="clearfix"><label class="_25_s">Email</label><span id="card-email"></span></div>
+                    <div class="clearfix"><label class="_25_s">Phone</label><span id="card-phone"></span></div>
+                    <div class="clearfix"><label class="_25_s">Address</label><span id="card-house"></span>&nbsp<span id="card-street"></span></div>
+                    <div class="clearfix"><label class="_25_s">&nbsp</label><span id="card-suburb"></span>&nbsp;<span id="card-state"></span></div>
+                    <div class="clearfix m_l_bottom">
+                      <label class="_25_s">Postcode</label><span id="card-postcode" class="_25_s">&nbsp;</span>
+                      <label class="_25_s">Country</label><span id="card-country" class="_25_s">&nbsp;</span>
+                    </div>
+                </div>
             </div>
+            
+        </main>
+        <aside class="_33_m p_l">
+          <div class="p_l txt_sm">
+             <p class="txt_xs"><b>DEVELOPER</b></p>
+             <p class="m_m_bottom">Adam Lawrence</p>
+             <p class="txt_xs"><b>BUILD TOOLS</b></p>
+             <p>SASS, GRUNT</p>
+             <p class="txt_xs"><b>FRAMEWORKS</b></p>
+             <p>jQuery</p>
+             <p class="txt_xs"><b>CONTACT</b></p>
+             <p>me@adamlawrence.com.au</p>
+             <p class="txt_xs"><b>GITHUB</b></p>
+             <p><a href="https://github.com/AdamLawrenceDesign/responsiveForm" target="_blank">View Project</a></p>
 
-
-        </section>
-    </main>
+          </div>
+        </aside>
+    </section>    
     
     <div class="clearfix"></div>
     <div class="clearfix" style="height:10em"></div>
 
-    <span id="screenSizeTesting">
-        <div id="testing_phone">
-        </div>
-        <div id="testing_tablet">
-        </div>
-        <div id="testing_desktop">
-        </div>
-        <div id="testing_desktop_lg">
-        </div>
-    </span>  
 
 <script>
 
 $(function(){
 
+$("body").css('min-height','250%');
 var validationInit = new ValidateForm($('form'));
 var postToCard = new CreateForm($('form'), $('#card'), $('#submit'));  
 
